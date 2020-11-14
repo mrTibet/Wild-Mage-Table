@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+    background-color: #f5f6fa;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.container div{
+    width:70%;
+    height: auto;
+    background-color: #e84118;
+}
+input {
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+.greet {
+    display: none;
+    width:70%;
+    height: auto;
+    background-color: #e84118;
+    /*position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;*/
+}
+.choise {
+    display: none;
+}
+/*working with input*/
+.input {
+    display: block;
+
+}
+.result {
+    display: none;
+}
+.passive {
+    display: none;
+}
+.active {
+    display: block;
+}
