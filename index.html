@@ -11,7 +11,7 @@
         <div class="greet">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare cursus ex lobortis sodales. Ut tempor condimentum eros, quis fermentum nibh iaculis a. Nunc a semper tortor. Nunc eget neque facilisis, luctus ligula vel, rutrum diam. Phasellus a velit venenatis, scelerisque lectus et, ultrices lacus.</p>
 
-            <input id='next' type="button" value="Next">
+            <input id='button-next' type="button" value="Next">
         </div>
         <div class="choise">
             <p>Well, you prefer more...</p>
@@ -23,8 +23,21 @@
             <input type="number">
             <input type="button" value="result">
         </div>
-        <div class="result"></div>
-        <script src="main.js"></script>
+        <div class="result">
+            <div class="result-list">
+            <div class="result-track">
+                <div class="res-slide">1</div>
+                <div class="res-slide">2</div>
+                <div class="res-slide">3</div>
+            </div>
+            </div>
+            <div class="result-arrows">
+                <button type="button" class="prev">&#9668;</button>
+                <button type="button" class="next">&#9658;</button>
+            </div>
+        </div>
+        <!--<script src="main.js"></script>-->
+        <script src="swiper.js"></script>
     </div>
 </body>
 </html>

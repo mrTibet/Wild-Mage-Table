@@ -9,8 +9,8 @@ body {
     width: 100%;
 }
 .container div{
-    width:70%;
-    height: auto;
+    /*width:70%;
+    height: 100vh;*/
     background-color: #e84118;
 }
 input {
@@ -38,12 +38,63 @@ input {
 }
 /*working with input*/
 .input {
-    display: block;
+    display: none;
 
 }
+/*result styling*/
 .result {
-    display: none;
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    user-select: none;
+    touch-action: pan-y;
 }
+.result-list{
+    margin: 0 auto;
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+}
+.result-list.grab{
+    cursor: grab;
+}
+.result-list.grabbing{
+    cursor: grabbing;
+}
+.result-track {
+    display: flex;
+}
+.res-slide{
+    width: 350px;
+    height: 450px;
+    /* Чтобы слайды не сжимались */
+    flex-shrink: 0;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;   
+}
+.result-arrows{
+    margin-top: 15px;
+    text-align: center;
+}
+.next,
+.prev {
+  background: none;
+  border: none;
+  margin: 0 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.next.disabled,
+.prev.disabled {
+  opacity: .25;
+  pointer-events: none;
+}
+
 .passive {
     display: none;
 }
