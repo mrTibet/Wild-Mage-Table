@@ -8,22 +8,22 @@
 </head>
 <body>
     <div id ='container' class="container">
-        <div class="greet">
+        <div class="block greet">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare cursus ex lobortis sodales. Ut tempor condimentum eros, quis fermentum nibh iaculis a. Nunc a semper tortor. Nunc eget neque facilisis, luctus ligula vel, rutrum diam. Phasellus a velit venenatis, scelerisque lectus et, ultrices lacus.</p>
 
             <input id='button-next' type="button" value="Next">
         </div>
-        <div class="choise">
+        <div class="block choise">
             <p>Well, you prefer more...</p>
-            <input id='my-roll' type="button" value="I will roll for you">
-            <input id='user-roll' type="button" value="You will roll for me">
+            <input id='user-roll' type="button" value="I will roll">
+            <input id='app-roll' type="button" value="Naah, random is my choice">
         </div>
-        <div class="input">
+        <div class="block input">
             <p>Enter your roll here</p>
             <input type="number">
-            <input type="button" value="result">
+            <input id = 'user-result' type="button" value="result">
         </div>
-        <div class="result">
+        <div class="block result">
             <div class="result-list">
             <div class="result-track">
                 <div class="res-slide">1</div>
@@ -35,8 +35,9 @@
                 <button type="button" class="prev">&#9668;</button>
                 <button type="button" class="next">&#9658;</button>
             </div>
+            <input id="result-back" type="button" value="Back">
         </div>
-        <!--<script src="main.js"></script>-->
+        <script src="main.js"></script>
         <script src="swiper.js"></script>
     </div>
 </body>
