@@ -10,32 +10,36 @@
     <div id ='container' class="container">
         <div class="block greet">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare cursus ex lobortis sodales. Ut tempor condimentum eros, quis fermentum nibh iaculis a. Nunc a semper tortor. Nunc eget neque facilisis, luctus ligula vel, rutrum diam. Phasellus a velit venenatis, scelerisque lectus et, ultrices lacus.</p>
-
-            <input id='button-next' type="button" value="Next">
+            <span id='button-next'>&#8250;</span>
+            <!--<input id='button-next' type="button" value="Next">-->
         </div>
         <div class="block choise">
-            <p>Well, you prefer more...</p>
-            <input id='user-roll' type="button" value="I will roll">
-            <input id='app-roll' type="button" value="Naah, random is my choice">
+            <p>Please, make your choice</p>
+            <span id='user-roll'>My roll</span>
+            <span id='app-roll'>Random</span>
+            <!--<input id='user-roll' type="button" value="I will roll">
+            <input id='app-roll' type="button" value="Naah, random is my choice">-->
         </div>
         <div class="block input">
             <p>Enter your roll here</p>
-            <input type="number">
-            <input id = 'user-result' type="button" value="result">
+            <form action="#">
+                <input type="number">
+                <input id = 'user-result' type="button" value="result"> 
+            </form>
         </div>
         <div class="block result">
-            <div class="result-list">
-            <div class="result-track">
-                <div class="res-slide">1</div>
-                <div class="res-slide">2</div>
-                <div class="res-slide">3</div>
+            <div class="carousel">
+                <div class="slider">
+                    <section>Content 1</section>
+                    <section>Content 2</section>
+                    <section>Content 3</section>
+                </div>
             </div>
+            <div class="controls">
+                <span class="arrow left">&#xab;</span>
+                <span class="arrow right">&#xbb;</span>
             </div>
-            <div class="result-arrows">
-                <button type="button" class="prev">&#9668;</button>
-                <button type="button" class="next">&#9658;</button>
-            </div>
-            <input id="result-back" type="button" value="Back">
+            <!--<input id="result-back" type="button" value="Back">-->
         </div>
         <script src="main.js"></script>
         <script src="swiper.js"></script>

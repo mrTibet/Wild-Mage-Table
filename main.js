@@ -5,7 +5,8 @@ let nextButton = document.getElementById('button-next'),
     appRoll = document.getElementById('app-roll'),
     backBtn = document.getElementById('result-back');
 
-let allDiv = document.querySelectorAll('.block');
+let allDiv = document.querySelectorAll('.block'),
+    inputDiv = document.getElementsByTagName('form');
 
 nextButton.addEventListener('click', function(){
     nextButton.parentElement.classList.remove('active');
@@ -20,8 +21,8 @@ userRoll.addEventListener('click', function () {
 })
 
 userResult.addEventListener('click', function () {
-    userResult.parentElement.classList.remove('active');
-    userResult.parentElement.classList.add('passive');
+    inputDiv[0].parentElement.classList.remove('active');
+    inputDiv[0].parentElement.classList.add('passive');
     container.children[3].classList.add('active');
 })
 
@@ -34,10 +35,6 @@ appRoll.addEventListener('click', function () {
 backBtn.addEventListener('click', function () {
     backBtn.parentElement.classList.remove('active');
     backBtn.parentElement.classList.add('passive');
-    /*for(let i=0;i<allDiv.length;i++){
-        allDiv[i].classList.add('passive')
-    }*/
-
     container.children[0].classList.add('active');
 })
 

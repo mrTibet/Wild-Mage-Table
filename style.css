@@ -1,100 +1,102 @@
 body {
     margin: 0px;
-    background-color: #f5f6fa;
+    background-color: #487eb0;
+    color: #f5f6fa;
 }
 .container{
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
-.container div{
-    border: solid 2px #e84118;
-    border-radius: 4px;
+.block{
+    /*border: solid 2px #c23616;*/
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
 }
+span {
+    font-size: 60px;
+    color: #f5f6fa;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 8px;
+    width: 76px;
+    background: #c23616;
+    border-radius: 50%;
+    text-align: center;
+}
+.choise span{
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 100px;
+    padding: 2px;
+}
+.greet {
+    display: block;
+    height: auto;
+    text-align: justify;
+}
+.choise {
+    display: none;
+    text-align: center;
+}
+/*working with input*/
+.input {
+    display: none;
+    text-align: center;
+}
+/*for button*/
 input {
+    color: inherit;
     font-size: 16px;
     padding: 8px 20px;
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
     border: none;
-    background-color: burlywood;
+    background-color: #c23616;
+    margin-bottom: 5px;
 }
-.greet {
-    display: block;
-    width:70%;
-    height: auto;
-    /*background-color: #e84118;
-    /*position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;*/
+/*removing arrows*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-.choise {
-    display: none;
-}
-/*working with input*/
-.input {
-    display: none;
-
+input[type=number] {
+    -moz-appearance: textfield;
 }
 /*result styling*/
 .result {
     display: none;
-    position: relative;
-    width: 400px;
-    height: 600px;
-    user-select: none;
-    touch-action: pan-y;
 }
-.result-list{
-    margin: 0 auto;
-    width: 350px;
-    height: 450px;
+.carousel{
+    height: 400px;
+    /*border: solid 2px #ccc;*/
+    position: relative;
     overflow: hidden;
 }
-.result-list.grab{
-    cursor: grab;
-}
-.result-list.grabbing{
-    cursor: grabbing;
-}
-.result-track {
+.slider{
     display: flex;
+    height: 100%;
+    width: 300%;
+    /*border: 1px solid red;*/
+    transition: all 0.3s;
 }
-.res-slide{
-    width: 350px;
-    height: 450px;
-    /* Чтобы слайды не сжимались */
-    flex-shrink: 0;
-    font-size: 50px;
+.slider section {
     display: flex;
-    align-items: center;
+    flex-basis: 100%;
     justify-content: center;
-    border: 1px solid #000;   
+    align-items: center;
 }
-.result-arrows{
-    margin-top: 15px;
-    text-align: center;
+.controls {
+    display: flex;
+    justify-content: space-between;
 }
-.next,
-.prev {
-  background: none;
-  border: none;
-  margin: 0 10px;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.next.disabled,
-.prev.disabled {
-  opacity: .25;
-  pointer-events: none;
-}
-
 .passive {
     display: none;
 }
