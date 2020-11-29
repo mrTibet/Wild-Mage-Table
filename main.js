@@ -33,8 +33,8 @@ appRoll.addEventListener('click', function () {
 })
 
 backBtn.addEventListener('click', function () {
-    backBtn.parentElement.classList.remove('active');
-    backBtn.parentElement.classList.add('passive');
+    container.children[3].classList.remove('active');
+    container.children[3].classList.add('passive');
     container.children[0].classList.add('active');
 })
 

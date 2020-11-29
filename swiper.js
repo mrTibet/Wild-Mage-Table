@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider');
 
-const leftArrow = document.querySelector('.left');
-const rightArrow = document.querySelector('.right');
+const leftArrow = document.querySelector('.controls').children[0];
+const rightArrow = document.querySelector('.controls').children[2];
 
 let sectionIndex = 0;
 

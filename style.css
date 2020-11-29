@@ -18,13 +18,13 @@ body {
 }
 span {
     font-size: 60px;
-    color: #f5f6fa;
+    color: #487eb0;
     font-weight: bold;
     display: block;
     margin: 0 auto;
     padding-bottom: 8px;
     width: 76px;
-    background: #c23616;
+    background: #f5f6fa;
     border-radius: 50%;
     text-align: center;
 }
@@ -38,6 +38,9 @@ span {
 .greet {
     display: block;
     height: auto;
+    text-align: center;
+}
+.greet p{
     text-align: justify;
 }
 .choise {
@@ -51,14 +54,14 @@ span {
 }
 /*for button*/
 input {
-    color: inherit;
+    color: #487eb0;
     font-size: 16px;
     padding: 8px 20px;
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
     border: none;
-    background-color: #c23616;
+    background-color: #f5f6fa;
     margin-bottom: 5px;
 }
 /*removing arrows*/
@@ -73,6 +76,7 @@ input[type=number] {
 /*result styling*/
 .result {
     display: none;
+    text-align: center;
 }
 .carousel{
     height: 400px;
@@ -102,4 +106,8 @@ input[type=number] {
 }
 .active {
     display: block;
+}
+.fas {
+    font-size: 30px;
+    color: #f5f6fa;
 }
