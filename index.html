@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/38cd01755e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div id ='container' class="container">
+    <div id='container' class="container">
         <div class="block greet">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare cursus ex lobortis sodales. Ut tempor condimentum eros, quis fermentum nibh iaculis a. Nunc a semper tortor. Nunc eget neque facilisis, luctus ligula vel, rutrum diam. Phasellus a velit venenatis, scelerisque lectus et, ultrices lacus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare cursus ex lobortis sodales. Ut
+                tempor condimentum eros, quis fermentum nibh iaculis a. Nunc a semper tortor. Nunc eget neque facilisis,
+                luctus ligula vel, rutrum diam. Phasellus a velit venenatis, scelerisque lectus et, ultrices lacus.</p>
             <!--<span id='button-next'>&#8250;</span>-->
             <i id='button-next' class="fas fa-chevron-circle-right"></i>
             <!--<input id='button-next' type="button" value="Next">-->
@@ -25,17 +29,13 @@
         <div class="block input">
             <p>Enter your roll here</p>
             <form action="#">
-                <input type="number">
-                <input id = 'user-result' type="button" value="result"> 
+                <input id='roll-input' type="number" min="1" max="100" required onkeyup="handleRollChange(this.valueAsNumber)">
+                <input id='user-result' type="submit" value="result">
             </form>
         </div>
         <div class="block result">
-            <div class="carousel">
-                <div class="slider">
-                    <section>Content 1</section>
-                    <section>Content 2</section>
-                    <section>Content 3</section>
-                </div>
+            <div id="carousel" class="carousel">
+                <div class="slider"></div>
             </div>
             <div class="controls">
                 <i class="fas fa-chevron-circle-left"></i>
@@ -48,10 +48,12 @@
             <i class="fas fa-chevron-circle-left"></i>
             <i class="fas fa-chevron-circle-right"></i>
             <input id="result-back" type="button" value="Back">-->
-            
+
         </div>
-        <script src="main.js"></script>
+        <script src="db.js"></script>
         <script src="swiper.js"></script>
+        <script src="main.js"></script>
     </div>
 </body>
+
 </html>
