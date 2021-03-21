@@ -23,11 +23,12 @@ userRoll.addEventListener('click', function () {
     container.children[2].classList.add('active');
 })
 
-userResult.addEventListener('click', function () {
+userResult.addEventListener('click', function (ev) {
     inputDiv[0].parentElement.classList.remove('active');
     inputDiv[0].parentElement.classList.add('passive');
     container.children[3].classList.add('active');
     getDataById(rollInput.valueAsNumber);
+    ev.preventDefault();//fix submit bag
 })
 
 appRoll.addEventListener('click', function () {
@@ -48,7 +49,7 @@ const rollData = JSON.parse(localStorage.getItem('rollData'));
 function getDataById(id) {
     const descriptions = rollData[id-1].descriptions;
 
-    sliderDiv.innerHTML = descriptions.map(d => `<section><div>Table ${d.tableId}</div><br> <div>${d.description}</div></section>`).join('');
+    sliderDiv.innerHTML = descriptions.map(d => `<section><div><h2>Table ${d.tableId}</h2></div><hr> <div>${d.description}</div></section>`).join('');
 }
 
 function handleChange(input) {

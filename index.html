@@ -7,24 +7,30 @@
     <title>Sick_Wizard_Table</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/38cd01755e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
+     <!--<header>
+            
+            <i class="fas fa-dice-d20 fa-5x"></i>
+    </header>-->
     <div id='container' class="container">
         <div class="block greet">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ornare cursus ex lobortis sodales. Ut
-                tempor condimentum eros, quis fermentum nibh iaculis a. Nunc a semper tortor. Nunc eget neque facilisis,
-                luctus ligula vel, rutrum diam. Phasellus a velit venenatis, scelerisque lectus et, ultrices lacus.</p>
-            <!--<span id='button-next'>&#8250;</span>-->
-            <i id='button-next' class="fas fa-chevron-circle-right"></i>
-            <!--<input id='button-next' type="button" value="Next">-->
+            <div>
+                <h1>Wild Mage Table</h1>
+            <p>Do you like to play wild mage wizard? Fine. Instead of boring official PHB you can use this creepy thing.</p>
+            <p>Just roll dice or we roll them instead of you. Depend on your choice.</p>
+            </div>
+            
+            <i id='button-next' class="fas fa-chevron-circle-right fa-2x"></i>
+            
         </div>
         <div class="block choise">
-            <p>Please, make your choice</p>
+            <p>Remeber! Only two options for your destiny.</p>
             <span id='user-roll'>My roll</span>
             <span id='app-roll'>Random</span>
-            <!--<input id='user-roll' type="button" value="I will roll">
-            <input id='app-roll' type="button" value="Naah, random is my choice">-->
         </div>
         <div class="block input">
             <p>Enter your roll here</p>
@@ -38,16 +44,12 @@
                 <div class="slider"></div>
             </div>
             <div class="controls">
-                <i class="fas fa-chevron-circle-left"></i>
-                <i id="result-back" class="fas fa-home"></i>
-                <i class="fas fa-chevron-circle-right"></i>
-                <!--<span class="arrow left">&#xab;</span>
-                <span class="arrow right">&#xbb;</span>-->
+                <i class="fas fa-chevron-circle-left fa-2x"></i>
+                <i id="result-back" class="fas fa-home fa-2x"></i>
+                <i class="fas fa-chevron-circle-right fa-2x"></i>
+                
             </div>
-            <!--<i class="fas fa-home"></i>
-            <i class="fas fa-chevron-circle-left"></i>
-            <i class="fas fa-chevron-circle-right"></i>
-            <input id="result-back" type="button" value="Back">-->
+            
 
         </div>
         <script src="db.js"></script>
