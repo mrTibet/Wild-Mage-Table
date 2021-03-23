@@ -11,22 +11,17 @@ let nextButton = document.getElementById('button-next'),
 let allDiv = document.querySelectorAll('.block'),
     inputDiv = document.getElementsByTagName('form');
 
-nextButton.addEventListener('click', function () {
-    nextButton.parentElement.classList.remove('active');
-    nextButton.parentElement.classList.add('passive');
-    container.children[1].classList.add('active');
-})
 
 userRoll.addEventListener('click', function () {
     userRoll.parentElement.classList.remove('active');
     userRoll.parentElement.classList.add('passive');
-    container.children[2].classList.add('active');
+    container.children[1].classList.add('active');
 })
 
 userResult.addEventListener('click', function (ev) {
     inputDiv[0].parentElement.classList.remove('active');
     inputDiv[0].parentElement.classList.add('passive');
-    container.children[3].classList.add('active');
+    container.children[2].classList.add('active');
     getDataById(rollInput.valueAsNumber);
     ev.preventDefault();//fix submit bag
 })
@@ -34,13 +29,13 @@ userResult.addEventListener('click', function (ev) {
 appRoll.addEventListener('click', function () {
     appRoll.parentElement.classList.remove('active');
     appRoll.parentElement.classList.add('passive');
-    container.children[3].classList.add('active');
+    container.children[2].classList.add('active');
     getDataById(Math.floor(Math.random() * Math.floor(100)));
 })
 
 backBtn.addEventListener('click', function () {
-    container.children[3].classList.remove('active');
-    container.children[3].classList.add('passive');
+    container.children[2].classList.remove('active');
+    container.children[2].classList.add('passive');
     container.children[0].classList.add('active');
 })
 

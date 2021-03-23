@@ -12,31 +12,25 @@
 </head>
 
 <body>
-     <!--<header>
-            
-            <i class="fas fa-dice-d20 fa-5x"></i>
-    </header>-->
     <div id='container' class="container">
-        <div class="block greet">
+        
+        <div class="block choise">
             <div>
                 <h1>Wild Mage Table</h1>
-            <p>Do you like to play wild mage wizard? Fine. Instead of boring official PHB you can use this creepy thing.</p>
-            <p>Just roll dice or we roll them instead of you. Depend on your choice.</p>
+                <p>Whole idea of creating this app was based on this <a href="https://www.dandwiki.com/wiki/Wild_Magic_Surge_Table,_Variant_(5e_Variant_Rule)">web page</a>.</p>
+                <p>Do you like to play wild mage wizard? Fine. Instead of boring official PHB you can use this creepy thing.</p>
+                <p>Just roll dice or we roll them instead of you. Depend on your choice.</p>
             </div>
-            
-            <i id='button-next' class="fas fa-chevron-circle-right fa-2x"></i>
-            
-        </div>
-        <div class="block choise">
             <p>Remeber! Only two options for your destiny.</p>
-            <span id='user-roll'>My roll</span>
-            <span id='app-roll'>Random</span>
+                <span id='user-roll'>My roll</span>
+                <span id='app-roll'>Random</span>
+            
         </div>
         <div class="block input">
             <p>Enter your roll here</p>
             <form action="#">
                 <input id='roll-input' type="number" min="1" max="100" required onkeyup="handleRollChange(this.valueAsNumber)">
-                <input id='user-result' type="submit" value="result">
+                <input id='user-result' type="submit" value="Result">
             </form>
         </div>
         <div class="block result">
